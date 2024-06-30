@@ -12,3 +12,9 @@
 ### 4th challenge: Insert-Middle-Value [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/whiteboard-challenges/assets/ch4submit2.PNG)
 
 ### 5th challenge: Find-Duplicates [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/challenges/Find-Duplicates/Find-Duplicates/README.md)
+
+### Challenge 06-A : Common-Elements [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/challenges/Common-Elements/Common-Elements/README.md)
+
+
+
+
