@@ -9,6 +9,6 @@
 
 ### third challenge: Remove-Middle-Value [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/main/whiteboard-challenges/assets/RemoveWhiteBoard.PNG)
 
-### 4th challenge: Insert-Middle-Value [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/Insert-Middle-Value/whiteboard-challenges/assets/ch4submit2.PNG)
+### 4th challenge: Insert-Middle-Value [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/whiteboard-challenges/assets/ch4submit2.PNG)
 
 ### 5th challenge: Find-Duplicates [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/whiteboard-challenges/assets/rW.PNG)
