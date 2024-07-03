@@ -19,7 +19,7 @@ namespace Common_Elements_test
 
             int[] result = Program.common(arr1, arr2);
 
-            Assert.Equal(expected, result);
+            Assert.Equal(expected, result);  
         }
 
         [Fact]
