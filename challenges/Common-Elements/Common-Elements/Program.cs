@@ -27,7 +27,7 @@
                         result.Add(arr1[i]);
                     }
                 }
-            }
+            }  
 
             return result.ToArray();
         }
