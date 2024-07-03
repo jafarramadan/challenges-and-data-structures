@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse-Words", "Reverse-Words\Reverse-Words.csproj", "{0BB9B693-B26B-4C49-8BEC-D3C560E8533A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse-Words-tests", "Reverse-Words-tests\Reverse-Words-tests.csproj", "{6CBA1AF3-9C81-4A5A-B2C6-BB5C0C293292}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BB9B693-B26B-4C49-8BEC-D3C560E8533A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB9B693-B26B-4C49-8BEC-D3C560E8533A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB9B693-B26B-4C49-8BEC-D3C560E8533A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB9B693-B26B-4C49-8BEC-D3C560E8533A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBA1AF3-9C81-4A5A-B2C6-BB5C0C293292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBA1AF3-9C81-4A5A-B2C6-BB5C0C293292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBA1AF3-9C81-4A5A-B2C6-BB5C0C293292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBA1AF3-9C81-4A5A-B2C6-BB5C0C293292}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CB3F08D-497B-47BB-B3FB-CC7CFF989D8D}
+	EndGlobalSection
+EndGlobal
