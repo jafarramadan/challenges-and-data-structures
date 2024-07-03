@@ -15,6 +15,9 @@
 
 ### Challenge 06-A : Common-Elements [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/challenges/Common-Elements/Common-Elements/README.md)
 
+### Challenge 06-B : Reverse-Words [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/challenges/Reverse-Words/Reverse-Words/README.md)
+
+
 
 
 
