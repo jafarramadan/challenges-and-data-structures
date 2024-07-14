@@ -1,4 +1,6 @@
-﻿namespace LinkedListProject
+﻿using System.Collections;
+
+namespace LinkedListProject
 {
     internal class Program
     {
@@ -6,18 +8,23 @@
         {
             LinkedList list = new LinkedList();
             list.Add(5);
-            list.Add(10);
             list.Add(20);
-            list.Add(30);
+            list.Add(20);
+            list.Add(10);
+            list.Add(5);
+            list.Add(10);
 
-           
-            list.PrintList(); 
-
-            
-            list.Remove(10);
+            Console.WriteLine("Original List:");
             list.PrintList();
 
-            Console.WriteLine("\ndoes the list include 20? "+list.Includes(20));
+            Console.WriteLine("\nAfter Removing Duplicates:");
+            list.RemoveDuplicate();
+            list.PrintList();
+
+            
+            
+
+
         }
     }
 }

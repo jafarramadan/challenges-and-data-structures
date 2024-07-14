@@ -11,13 +11,12 @@ namespace LinkedListProject
         public int Data { get; set; }
         public Node Next { get; set; }
 
-        public Node(int data ) { 
-
+        public Node(int data)
+        {
             Data = data;
             Next = null;
         }
     }
-
 
     public class LinkedList
     {
@@ -85,6 +84,27 @@ namespace LinkedListProject
             }
 
             current.Next = current.Next.Next;
+        }
+
+        public void RemoveDuplicate()
+        {
+            Node current = Head;
+            while (current != null)
+            {
+                Node runner = current;
+                while (runner.Next != null)
+                {
+                    if (runner.Next.Data == current.Data)
+                    {
+                        runner.Next = runner.Next.Next;
+                    }
+                    else
+                    {
+                        runner = runner.Next;
+                    }
+                }
+                current = current.Next;
+            }
         }
 
         public void PrintList()
