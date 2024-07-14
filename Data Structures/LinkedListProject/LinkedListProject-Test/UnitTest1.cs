@@ -2,10 +2,10 @@ using Xunit;
 using LinkedListProject;
 namespace LinkedListProject_Test
 {
-    public class UnitTest1
+    public class RemoveDuplicatesTests
     {
         [Fact]
-        public void Remove_NodeFromEnd_ShouldRemoveNode()
+        public void RemoveDuplicates_NoDuplicates_ShouldRemainUnchanged()
         {
             // Arrange
             LinkedList list = new LinkedList();
@@ -14,56 +14,60 @@ namespace LinkedListProject_Test
             list.Add(20);
 
             // Act
-            list.Remove(20);
+            list.RemoveDuplicate();
 
             // Assert
-            Assert.False(list.Includes(20));
+            string expected = "Head -> 5 -> 10 -> 20 -> Null\r\n";
+            Assert.Equal(expected, CaptureConsoleOutput(list.PrintList));
         }
 
         [Fact]
-        public void PrintList_ShouldPrintCorrectContents()
+        public void RemoveDuplicates_WithDuplicates_ShouldRemoveDuplicates()
         {
             // Arrange
             LinkedList list = new LinkedList();
             list.Add(5);
-            list.Add(10);
             list.Add(20);
+            list.Add(20);
+            list.Add(10);
+            list.Add(5);
+            list.Add(10);
 
-            // Redirect console output
+            // Act
+            list.RemoveDuplicate();
+
+            // Assert
+            string expected = "Head -> 5 -> 20 -> 10 -> Null\r\n";
+            Assert.Equal(expected, CaptureConsoleOutput(list.PrintList));
+        }
+
+        [Fact]
+        public void RemoveDuplicates_AllDuplicates_ShouldReduceToSingleElement()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+            list.Add(7);
+            list.Add(7);
+            list.Add(7);
+            list.Add(7);
+
+            // Act
+            list.RemoveDuplicate();
+
+            // Assert
+            string expected = "Head -> 7 -> Null\r\n";
+            Assert.Equal(expected, CaptureConsoleOutput(list.PrintList));
+        }
+
+        
+        private string CaptureConsoleOutput(Action action)
+        {
             using (var sw = new System.IO.StringWriter())
             {
                 Console.SetOut(sw);
-
-                // Act
-                list.PrintList();
-
-                // Assert
-                string expected = "Head -> 5 -> 10 -> 20 -> Null\r\n";
-                Assert.Equal(expected, sw.ToString());
+                action.Invoke();
+                return sw.ToString();
             }
-        }
-
-        [Fact]
-        public void Remove_NodeNotInList_ShouldThrowException()
-        {
-            // Arrange
-            LinkedList list = new LinkedList();
-            list.Add(5);
-            list.Add(10);
-            list.Add(20);
-
-            // Act & Assert
-            Assert.Throws<InvalidOperationException>(() => list.Remove(30));
-        }
-
-        [Fact]
-        public void Remove_NodeFromEmptyList_ShouldThrowException()
-        {
-            // Arrange
-            LinkedList list = new LinkedList();
-
-            // Act & Assert
-            Assert.Throws<InvalidOperationException>(() => list.Remove(10));
         }
     }
 }
