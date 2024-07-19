@@ -1,4 +1,4 @@
-using Xunit;
+﻿using Xunit;
 using LinkedListProject;
 namespace LinkedListProject_Test
 {
@@ -59,7 +59,7 @@ namespace LinkedListProject_Test
             Assert.Equal(expected, CaptureConsoleOutput(list.PrintList));
         }
 
-        
+
         private string CaptureConsoleOutput(Action action)
         {
             using (var sw = new System.IO.StringWriter())
