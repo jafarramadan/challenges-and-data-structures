@@ -16,6 +16,9 @@ namespace LinkedListProject
             Data = data;
             Next = null;
         }
+        public Node()
+        {
+        }
     }
 
     public class LinkedList
@@ -44,6 +47,7 @@ namespace LinkedListProject
                 current.Next = newNode;
             }
         }
+        
 
         public bool Includes(int data)
         {
@@ -86,6 +90,20 @@ namespace LinkedListProject
             current.Next = current.Next.Next;
         }
 
+        public void PrintList()
+        {
+            Node current = Head;
+            Console.Write("Head->");
+            while (current != null)
+            {
+                Console.Write(current.Data + "->");
+                current = current.Next;
+            }
+            Console.WriteLine("Null");
+        }
+
+
+        //remove duplicate part
         public void RemoveDuplicate()
         {
             Node current = Head;
@@ -107,16 +125,35 @@ namespace LinkedListProject
             }
         }
 
-        public void PrintList()
+        //merge sorted list 
+
+        public LinkedList MergeSortedLists(LinkedList list1 , LinkedList list2)
         {
-            Node current = Head;
-            Console.Write("Head -> ");
-            while (current != null)
+            LinkedList mergedLinkedList= new LinkedList();
+            if (list1.Head == null) return list2;
+            if (list2.Head == null) return list1;
+            Node temp = new Node();
+            Node tail = temp; 
+            Node current1 = list1.Head;
+            Node current2 = list2.Head;
+            
+            while (current1 != null && current2 !=null)
             {
-                Console.Write(current.Data + " -> ");
-                current = current.Next;
+                if (current1.Data <= current2.Data)
+                {
+                    tail.Next = current1;
+                    current1 = current1.Next;
+                }
+                else
+                {
+                    tail.Next= current2;
+                    current2 = current2.Next;
+                }
+                tail=tail.Next;
             }
-            Console.WriteLine("Null");
+            tail.Next = (current1 != null) ? current1 : current2;
+            mergedLinkedList.Head = temp.Next;
+            return mergedLinkedList;
         }
     }
 }
