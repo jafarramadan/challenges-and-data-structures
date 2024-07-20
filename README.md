@@ -17,9 +17,12 @@
 
 ### Challenge 06-B : Reverse-Words [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/challenges/Reverse-Words/Reverse-Words/README.md)
 
-### Linked List (implementation) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/LinkedListProject/LinkedListProject/LinkedListImplementation/README.md)
+### Linked List (Implementation) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/LinkedListProject/LinkedListProject/LinkedListImplementation/README.md)
 
-### Linked List (Remove dublicate) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/LinkedListProject/LinkedListProject/RemoveDuplicates/README.md)
+### Linked List (Remove Dublicate) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/LinkedListProject/LinkedListProject/RemoveDuplicates/README.md)
+
+### Linked List (Merge Sorted Lists) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/LinkedListProject/LinkedListProject/MergeSorted/README.md)
+
 
 
 
