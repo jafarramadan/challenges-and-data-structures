@@ -25,7 +25,5 @@
 
 ### Stack & Queue (Implementation) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/Stack%26Queue/StackAndQueue/StackAndQueue/README.md)
 
-
-
-
-
+### Stack & Queue (Reverse a Stack using Queue) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/Stack%26Queue/StackAndQueue/StackAndQueue/ReverseStackUsingQueue/README.md
+)
