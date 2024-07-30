@@ -1,4 +1,6 @@
-﻿namespace StackAndQueue
+﻿using StackAndQueue.ReverseStackUsingQueue;
+
+namespace StackAndQueue
 {
     internal class Program
     {
@@ -27,6 +29,24 @@
             Console.WriteLine($"The Dequeued element is : {queue.Dequeue()}");
             Console.WriteLine($"The Peeked element is : {queue.Peek()}");
             Console.WriteLine($"Check if queue is empty ? {queue.IsEmpty()}");
+
+
+
+            //==========================================================
+
+            Console.WriteLine("====ReversStack========================================================");
+            StackWithReverse reverse = new StackWithReverse();
+            StackExample stack1 = new StackExample();
+            stack1.Push(1);
+            stack1.Push(2);
+            stack1.Push(3);
+            stack1.Push(4);
+            Console.WriteLine("Print the stack after reversing");
+            reverse.ReverseStack(stack1);
+            while (stack1.IsEmpty() == false)
+            {
+                Console.WriteLine(stack1.Pop());
+            }
 
         }
     }
