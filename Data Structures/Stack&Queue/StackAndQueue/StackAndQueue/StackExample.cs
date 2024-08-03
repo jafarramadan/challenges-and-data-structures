@@ -48,5 +48,16 @@ namespace StackAndQueue
         {
             return top == null;
         }
+
+        public int Countt(StackExample stackk)
+        {
+           int count = 0;
+            while (stackk.IsEmpty() == false)
+            {
+                count++;
+                stackk.Pop();
+            }
+            return count;
+        }
     }
 }
