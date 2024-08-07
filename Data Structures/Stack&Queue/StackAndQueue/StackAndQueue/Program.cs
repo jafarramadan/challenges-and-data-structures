@@ -69,6 +69,16 @@ namespace StackAndQueue
             }
 
 
+            //  =================================================================================
+            Console.WriteLine("====MinStack========================================================");
+            MinStack minStack = new MinStack();
+            StackExample stack3 = new StackExample();
+            stack3.Push(15);
+            stack3.Push(7);
+            stack3.Push(12);
+            stack3.Push(3);
+
+            Console.WriteLine("The min element in the stack is : "+minStack.GetMin(stack3));
 
         }
     }

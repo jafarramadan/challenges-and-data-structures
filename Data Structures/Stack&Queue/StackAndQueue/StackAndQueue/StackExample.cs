@@ -59,5 +59,18 @@ namespace StackAndQueue
             }
             return count;
         }
+
+        public void PrintStack(StackExample stack)
+        {
+            while (stack.IsEmpty() == false)
+            {
+                Console.WriteLine(stack.Pop());
+            }
+        }
+
+        public void Top(StackExample stack)
+        {
+            Console.WriteLine(stack.Peek());
+        }
     }
 }
