@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TreeImplementation
+namespace TreeImplementation.TreeImplementation
 {
     public class BinarySearchTree : BinaryTree
     {
         public TNode Root { get; set; }
-        public BinarySearchTree(int rootValue) : base (rootValue)
+        public BinarySearchTree(int rootValue) : base(rootValue)
         {
             Root = new TNode(rootValue);
         }
@@ -40,15 +40,15 @@ namespace TreeImplementation
             }
 
         }
-        
-        public bool Contains(int value , TNode node)
+
+        public bool Contains(int value, TNode node)
         {
             if (node == null) return false;
             if (value == node.Value) return true;
-            
+
             else if (value < node.Value)
             {
-                return Contains(value, node.Left) ;
+                return Contains(value, node.Left);
             }
             else if (value > node.Value)
             {
@@ -57,7 +57,7 @@ namespace TreeImplementation
             else return false;
         }
 
-        public  TNode deleteRecursively(TNode root, int value)
+        public TNode deleteRecursively(TNode root, int value)
         {
 
             if (root == null)
@@ -89,7 +89,7 @@ namespace TreeImplementation
 
         }
 
-        public  int inOrderSuccessor(TNode root)
+        public int inOrderSuccessor(TNode root)
         {
             int minimum = root.Value;
             while (root.Left != null)
