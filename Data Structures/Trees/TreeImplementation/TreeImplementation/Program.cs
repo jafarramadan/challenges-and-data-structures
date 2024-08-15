@@ -1,21 +1,34 @@
-﻿using TreeImplementation.TreeImplementation;
+﻿using System.Xml.Linq;
+using TreeImplementation.MirrorTree;
+using TreeImplementation.TreeImplementation;
 
 namespace TreeImplementation
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-          
-            BinaryTree b=new BinaryTree(10);
-            b.insert(5);
-            b.insert(15);
-            b.insert(3);
-            b.insert(7);
-            b.insert(12);
-            b.insert(18);
+            BinaryTree Btree = new BinaryTree(4);
+            Btree.Root.Left = new TNode(8);
+            Btree.Root.Right = new TNode(7);
+            Btree.Root.Left.Left = new TNode(12);
+            Btree.Root.Left.Right = new TNode(9);
 
-            b.print(b.Root);
+            MirrorTreeClass mirrorTreeClass = new MirrorTreeClass();
+
+            Console.WriteLine("Before");
+            List<int> l2 = mirrorTreeClass.InorderTraversal(Btree.Root);
+            foreach (int i in l2)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("After");
+            List<int> l1 = mirrorTreeClass.Merror(l2);
+            foreach (int i in l1)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
