@@ -51,6 +51,9 @@ namespace TreeImplementation.TreeImplementation
             PreOrder(node.Right);
 
         }
+        
+
+
 
         //left-root-right
         public void InOrder(TNode node)
@@ -89,7 +92,6 @@ namespace TreeImplementation.TreeImplementation
             Console.Write(root.Value + "\n");
             print2DUtil(root.Left, space);
         }
-
 
     }
 }
