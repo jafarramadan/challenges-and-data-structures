@@ -1,4 +1,5 @@
 ﻿using System.Xml.Linq;
+using TreeImplementation.LeafSum;
 using TreeImplementation.MirrorTree;
 using TreeImplementation.SecondMaxValue;
 using TreeImplementation.TreeImplementation;
@@ -9,19 +10,20 @@ namespace TreeImplementation
     {
         static void Main(string[] args)
         {
-            BinaryTree Btree = new BinaryTree(10);
-            Btree.insert(5);
-            Btree.insert(20);
-            Btree.insert(3);
-            Btree.insert(7);
-            Btree.insert(15);
-            Btree.insert(25);
+            BinaryTree Btree = new BinaryTree(9);
+            Btree.Root.Left = new TNode(8);
+            Btree.Root.Right = new TNode(12);
+            Btree.Root.Left.Left = new TNode(3);
+            Btree.Root.Left.Right = new TNode(7);
+            Btree.Root.Right.Left = new TNode(17);
+            Btree.Root.Right.Right = new TNode(23);
+            Btree.Root.Left.Left.Right = new TNode(4);
 
-            SecondMaxValueClass secondMaxFinder = new SecondMaxValueClass();
-            
-                int secondMax = secondMaxFinder.FindSecondMax(Btree.Root);
-                Console.WriteLine("Second Maximum Value: " + secondMax);
-            
+            Leaf_SumClass leaf_SumClass = new Leaf_SumClass();
+            Console.WriteLine(leaf_SumClass.SumLeaf(Btree.Root));
+
+
+            Btree.print(Btree.Root);
         }
     }
 }
