@@ -37,5 +37,7 @@
 
 ### Tree (Second Max Value) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/SecondMaxValue/README.md)
 
+### Tree (Leaf Sum) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/LeafSum/README.md)
+
 
 
