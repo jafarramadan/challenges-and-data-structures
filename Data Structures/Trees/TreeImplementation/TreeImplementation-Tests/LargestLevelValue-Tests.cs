@@ -1,16 +1,19 @@
-﻿using System.Xml.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using TreeImplementation.LargestLevelValue;
-using TreeImplementation.LeafSum;
-using TreeImplementation.MirrorTree;
-using TreeImplementation.SecondMaxValue;
 using TreeImplementation.TreeImplementation;
 
-namespace TreeImplementation
+namespace TreeImplementation_Tests
 {
-    public class Program
+    public class LargestLevelValue_Tests
     {
-        static void Main(string[] args)
+        [Fact]
+        public void LargestLevelValue_Test()
         {
+            //arrange
             BinaryTree Btree = new BinaryTree(5);
             Btree.Root.Left = new TNode(13);
             Btree.Root.Right = new TNode(7);
@@ -21,12 +24,15 @@ namespace TreeImplementation
             Btree.Root.Left.Left.Left = new TNode(1);
             Btree.Root.Left.Left.Right = new TNode(4);
             Btree.Root.Right.Left.Right = new TNode(11);
-            LargestLevelValueClass largestLevelValue =new LargestLevelValueClass();
+
+            //act
+            LargestLevelValueClass largestLevelValue = new LargestLevelValueClass();
             List<int> largestValues = largestLevelValue.LargestLevelValue(Btree);
+           int x= largestValues.Sum();
+            int y = 49;
 
-            Console.WriteLine(string.Join(", ", largestValues));
-
-            Btree.print(Btree.Root);
+            //assert 
+            Assert.Equal(y, x);
         }
     }
 }
