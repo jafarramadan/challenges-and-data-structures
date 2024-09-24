@@ -47,8 +47,24 @@ namespace LinkedListProject
             LinkedList merged= list.MergeSortedLists(list3, list4);
 
             merged.PrintList();
+            Console.WriteLine("\n");
+            //=========================================================================================================
 
+            Console.WriteLine("===RotateLinkedList==================================================================");
+            LinkedList listK= new LinkedList(); 
+            
+            listK.Add(1);
+            listK.Add(2);
+            listK.Add(3);
+            listK.Add(4);
+            listK.Add(5);
+            Console.WriteLine("=========Befor rotate");
+            listK.PrintList();
+            LinkedList done= listK.RotateLeft(listK, 2);
+            Console.WriteLine("=========After rotate");
 
+            done.PrintList();
+            
 
 
         }
