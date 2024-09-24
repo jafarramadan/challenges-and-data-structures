@@ -155,5 +155,24 @@ namespace LinkedListProject
             mergedLinkedList.Head = temp.Next;
             return mergedLinkedList;
         }
+
+        public LinkedList RotateLeft(LinkedList list , int k)
+        {
+            if (k == 0 || list.Head==null)
+            {
+                return list;
+            }
+            Node current = Head;
+            while (k != 0)
+            {
+                list.Add(current.Data);
+                list.Remove(current.Data);
+                current = current.Next;
+                k--;
+            }
+            return list;
+        }
+
+        
     }
 }
