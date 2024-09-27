@@ -162,11 +162,11 @@ namespace LinkedListProject
             {
                 return list;
             }
-            Node current = Head;
+            Node current = Head; //1
             while (k != 0)
             {
-                list.Add(current.Data);
-                list.Remove(current.Data);
+                list.Add(current.Data);//1-2-3-4-5-1
+                list.Remove(current.Data);//2-3-4-5-1
                 current = current.Next;
                 k--;
             }
