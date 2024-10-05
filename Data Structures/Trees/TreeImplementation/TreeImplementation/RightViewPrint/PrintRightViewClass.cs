@@ -10,44 +10,33 @@ namespace TreeImplementation.RightViewPrint
 {
     public class PrintRightViewClass
     {
-        public List<int> PrintRightView(TNode node)
+       public void PrintRightView(TNode node)
         {
-            List<int> rightViewList = new List<int>();
-
-            if (node == null) return rightViewList;
-            if (node.Right == null ||  node.Left == null)return rightViewList;
-            
-            List<TNode> nodeList = new List<TNode>();
-            nodeList.Add(node); 
-
-            while (nodeList.Count > 0)
+            TNode current = node.Left;
+            while (node != null)
             {
-                int levelSize = nodeList.Count;
-                int count = 0;  
+                Console.WriteLine(node.Value);
+                node = node.Right;
+            }
 
-                while (count < levelSize)
+            while (current != null)
+            {
+                Console.WriteLine(current.Value);
+                if (current.Value == null)
                 {
-                    TNode current = nodeList[0];
-                    nodeList.RemoveAt(0);
-                    count++;
-
-                    if (count == levelSize)
-                    {
-                        rightViewList.Add(current.Value);
-                    }
-                    if (current.Left != null)
-                    {
-                        nodeList.Add(current.Left);
-                    }
-                    if (current.Right != null)
-                    {
-                        nodeList.Add(current.Right);
-                    }
+                    current = current.Left;
+                }
+                else
+                {
+                    current = current.Right;
                 }
             }
-            return rightViewList;
         }
-
-       
     }
 }
+
+
+
+
+
+
