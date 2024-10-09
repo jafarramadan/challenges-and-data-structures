@@ -47,3 +47,5 @@
 
 ### Tree (Max Level Nodes) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MaxLEvelNodes/README.md)
 
+### Tree (Minimum Depth) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MinimumDepth/README.md)
+
