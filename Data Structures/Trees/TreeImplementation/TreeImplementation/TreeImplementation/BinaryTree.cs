@@ -89,7 +89,7 @@ namespace TreeImplementation.TreeImplementation
             Console.Write(root.Value + "\n");
             print2DUtil(root.Left, space);
         }
-
+        
     }
 }
 
