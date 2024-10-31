@@ -49,3 +49,5 @@
 
 ### Tree (Minimum Depth) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MinimumDepth/README.md)
 
+### Tree (Binary Tree to Binary Search Tree) : [Link](https://github.com/jafarramadan/challenges-and-data-structures/blob/master/Data%20Structures/Trees/TreeImplementation/TreeImplementation/BTreeToBST/README.md)
+
