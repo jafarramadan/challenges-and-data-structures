@@ -1,4 +1,5 @@
 ﻿using System.Xml.Linq;
+using TreeImplementation.BTreeToBST;
 using TreeImplementation.LargestLevelValue;
 using TreeImplementation.LeafSum;
 using TreeImplementation.MaxLEvelNodes;
@@ -14,14 +15,15 @@ namespace TreeImplementation
     {
         static void Main(string[] args)
         {
-            BinaryTree Btree = new BinaryTree(1);
-            Btree.Root = new TNode(2);
-            Btree.Root.Left = new TNode(3);
-            Btree.Root.Right = new TNode(4);
-            Btree.Root.Left.Left = new TNode(5);
-            MinimumDepthClass minimumDepthClass = new MinimumDepthClass();
-            int minDepth = minimumDepthClass.FindMinimumDepth(Btree.Root);
-            Console.WriteLine(minDepth);
+            int[] arr = { 5, 10, 20, 35, 40, 50, 60 };
+
+            BTreeToBSTClass bTreeToBSTClass = new BTreeToBSTClass();
+            
+
+            BinaryTree binaryTree = new BinaryTree(1);
+
+            binaryTree.print(bTreeToBSTClass.ArrayToBst(arr));
+
         }
     }
 }
